@@ -1,0 +1,12 @@
+module TimeEditBooker
+  module Config
+    LOGIN_URL = "https://se.timeedit.net/web/chalmers/db1/b1/"
+    BOOK_URL  = "https://se.timeedit.net/web/chalmers/db1/b1/ri1Q5008.html"
+
+    USERS = {
+      'cid1' => 'password1',
+      'cid2' => 'password2',
+      'cid3' => 'password3'
+    }
+  end
+end
