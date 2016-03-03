@@ -1,3 +1,5 @@
+require 'time'
+
 module TimeEditBooker
   module Config
     LOGIN_URL = "https://se.timeedit.net/web/chalmers/db1/b1/"
@@ -8,5 +10,15 @@ module TimeEditBooker
       'cid2' => 'password2',
       'cid3' => 'password3'
     }
+
+    MORNING_START_TIME   = Time.parse("09:00 am")
+    MORNING_END_TIME     = Time.parse("01:00 pm")
+    AFTERNOON_START_TIME = Time.parse("01:00 pm")
+    AFTERNOON_END_TIME   = Time.parse("05:00 pm")
+
+    # This is currently taken directly from TimeEdit source.
+    # TODO Write a crawler for TimeEdit that creates some kind of map for
+    #      these values.
+    ROOM = "204734.186" # M1212D
   end
 end
