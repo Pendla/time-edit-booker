@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require './booker'
-require './config'
+require './../config'
 
 # Start of with dates 2 weeks from now, since those study rooms will
 # pretty much always be free.

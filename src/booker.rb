@@ -2,7 +2,7 @@ require 'net/http'
 require 'yaml'
 require 'openssl'
 
-require './config'
+require './../config'
 
 module TimeEditBooker
   include Net
